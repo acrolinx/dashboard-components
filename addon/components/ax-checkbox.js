@@ -1,5 +1,5 @@
 import Component from '@ember/component';
-import layout from '../../templates/components/ax-checkbox';
+import layout from '../templates/components/ax-checkbox';
 
 const KEYCODE_SPACE = 32;
 const KEYCODE_ENTER = 13;

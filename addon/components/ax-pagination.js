@@ -1,5 +1,5 @@
 import Component from '@ember/component';
-import layout from '../../templates/components/ax-pagination';
+import layout from '../templates/components/ax-pagination';
 import { computed } from '@ember/object';
 
 export default Component.extend({
