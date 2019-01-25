@@ -1,13 +1,13 @@
 <thead class="md-head">
-  {{#base/ax-table/row}}
+  {{#ax-table/row}}
     {{yield (hash
-      column=(component "base/ax-table/column" tableAPI=@tableAPI)
-      sortableColumn=(component "base/ax-table/sortable-column"
+      column=(component "ax-table/column" tableAPI=@tableAPI)
+      sortableColumn=(component "ax-table/sortable-column"
         tableAPI=@tableAPI
         ascIconName="arrow_upward"
         descIconName="arrow_downward"
         iconSize=24
       )
     )}}
-  {{/base/ax-table/row}}
+  {{/ax-table/row}}
 </thead>

@@ -11,8 +11,9 @@
     as |tableAPI|
   }}
     {{yield (hash
-      head=(component "base/ax-table/head" tableAPI=tableAPI)
-      body=(component "base/ax-table/body")
+      head=(component "ax-table/head"
+        tableAPI=(readonly tableAPI))
+      body=(component "ax-table/body")
     )}}
   {{/let}}
 </table>

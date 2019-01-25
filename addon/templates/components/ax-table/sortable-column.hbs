@@ -7,11 +7,11 @@
 
   {{#if active}}
     {{#if (eq @tableAPI.direction "asc")}}
-      {{base/ax-icon name=@ascIconName size=@iconSize}}
+      {{ax-icon name=@ascIconName size=@iconSize}}
     {{else}}
-      {{base/ax-icon name=@descIconName size=@iconSize}}
+      {{ax-icon name=@descIconName size=@iconSize}}
     {{/if}}
   {{else}}
-    {{base/ax-icon name="" size=@iconSize}}
+    {{ax-icon name="" size=@iconSize}}
   {{/if}}
 </th>

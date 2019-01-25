@@ -3,18 +3,18 @@
   aria-label={{t "shared.components.pagination.title"}}
 >
   {{#let (eq @currentPage 1) as |disabled|}}
-    {{#base/ax-button
+    {{#ax-button
       iconButton=true
       primary=true
       onClick=(action "previousPage")
       disabled=disabled
     }}
-      {{base/ax-icon
+      {{ax-icon
         name="keyboard_arrow_left"
         ariaHidden=disabled
         ariaLabel=(t "shared.components.pagination.switchPageButton" page=previousPage)
       }}
-    {{/base/ax-button}}
+    {{/ax-button}}
   {{/let}}
 
   <input
@@ -28,18 +28,18 @@
   >
 
   {{#let (eq @currentPage @pagesCount) as |disabled|}}
-    {{#base/ax-button
+    {{#ax-button
       iconButton=true
       primary=true
       onClick=(action "nextPage")
       disabled=disabled
     }}
-      {{base/ax-icon
+      {{ax-icon
         name="keyboard_arrow_right"
         ariaHidden=disabled
         ariaLabel=(t "shared.components.pagination.switchPageButton" page=nextPage)
       }}
-    {{/base/ax-button}}
+    {{/ax-button}}
   {{/let}}
 
   <span>
