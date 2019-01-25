@@ -1,4 +1,5 @@
 import Component from '@ember/component';
+import { computed } from '@ember/object';
 import layout from '../../templates/components/ax-table/sortable-column';
 
 export default Component.extend({
