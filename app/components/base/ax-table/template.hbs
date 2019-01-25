@@ -1,0 +1,18 @@
+{{! template-lint-disable table-groups }}
+
+<table class="md-table {{@classNames}}">
+  {{#let
+    (hash
+      direction=@direction
+      sort=@sort
+      updateDirection=(action "updateDirection")
+      updateSort=(action "updateSort")
+    )
+    as |tableAPI|
+  }}
+    {{yield (hash
+      head=(component "base/ax-table/head" tableAPI=tableAPI)
+      body=(component "base/ax-table/body")
+    )}}
+  {{/let}}
+</table>

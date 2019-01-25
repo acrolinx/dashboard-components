@@ -1,0 +1,17 @@
+<th
+  role="button"
+  class="md-column md-column--sortable {{@classNames}} {{if active "md-column--active"}}"
+  {{action @tableAPI.updateSort @sortBy}}
+>
+  {{yield}}
+
+  {{#if active}}
+    {{#if (eq @tableAPI.direction "asc")}}
+      {{base/ax-icon name=@ascIconName size=@iconSize}}
+    {{else}}
+      {{base/ax-icon name=@descIconName size=@iconSize}}
+    {{/if}}
+  {{else}}
+    {{base/ax-icon name="" size=@iconSize}}
+  {{/if}}
+</th>

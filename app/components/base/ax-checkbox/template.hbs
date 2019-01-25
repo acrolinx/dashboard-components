@@ -1,0 +1,17 @@
+{{#if hasBlock}}
+  <md-checkbox 
+    tabindex="0" 
+    role="button" 
+    onclick={{action "onChange"}}
+    onkeypress={{action "onKeyPress"}}
+    class="md-checkbox md-default-theme ax-checkbox">
+    <div class="md-container">
+      {{yield}}
+    </div>
+  </md-checkbox>
+{{else}}
+  {{paper-checkbox
+    value=@value
+    onChange=(action "onChange")
+  }}
+{{/if}}
