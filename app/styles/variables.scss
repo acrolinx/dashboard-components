@@ -1,26 +1,15 @@
-$m-base: 20px;
-$m-xs: $m-base / 4;
-$m-sm: $m-base / 2;
-$m-lg: $m-base * 2;
-$m-xl: $m-base * 3;
-
-$brand-primary: #3e96db;
-
-$black: #000;
-
-$gray-light: #f1f6f8;
-$gray-dark: #767676;
-
 $blue-light: #e1f5fe;
+$brand-primary: #3e96db;
+$gray-light: #f1f6f8;
 
 $primary: (
-  '50': #e8f2fb,
+   '50': #e8f2fb,
   '100': #c5e0f4,
   '200': #9fcbed,
   '300': #78b6e6,
   '400': #5ba6e0,
-  '500': $brand-primary,
-  '600': #388ed7,
+  '500': #3e96db,
+  '600': #0277bd,
   '700': #3083d2,
   '800': #2879cd,
   '900': #1b68c4,
@@ -28,10 +17,47 @@ $primary: (
   'A200': #c6deff,
   'A400': #93c1ff,
   'A700': #7ab2ff,
-  'contrastDefaultColor': #00b4a5,
+  'contrastDefaultColor': #0277bd,
   'contrastLightColors': ('500', '600', '700', '800', '900'),
   'contrastStrongLightColors': ('500', '600', '700')
 );
 
-$accent: 'blue';
-$warn: 'red';
+$accent: (
+  '50': #fdfeff,
+  '100': #f9fcfe,
+  '200': #f5fafd,
+  '300': #f1f7fc,
+  '400': #eef6fc,
+  '500': #3e96db,
+  '600': #e9f3fa,
+  '700': #e5f1fa,
+  '800': #e2eff9,
+  '900': #ddecf8,
+  'A100': #ffffff,
+  'A200': #ffffff,
+  'A400': #ffffff,
+  'A700': #ffffff,
+  'contrastDefaultColor': #ebf4fb,
+  'contrastLightColors': ('500', '600', '700', '800', '900'),
+  'contrastStrongLightColors': ('500', '600', '700')
+);
+
+$warn: (
+  '50': #fefefe,
+  '100': #fcfcfc,
+  '200': #fafafa,
+  '300': #f7f7f7,
+  '400': #f6f6f6,
+  '500': #f0556a,
+  '600': #f3f3f3,
+  '700': #f1f1f1,
+  '800': #efefef,
+  '900': #ececec,
+  'A100': #ffffff,
+  'A200': #ffffff,
+  'A400': #ffffff,
+  'A700': #ffffff,
+  'contrastDefaultColor': #f4f4f4,
+  'contrastLightColors': ('500', '600', '700', '800', '900'),
+  'contrastStrongLightColors': ('500', '600', '700')
+);
