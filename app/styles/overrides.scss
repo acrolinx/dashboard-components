@@ -1,0 +1,20 @@
+.md-button {
+  &--with-negative-offset {
+    margin-left: -8px;
+  }
+
+  .md-icon-button {
+    &--with-negative-offset {
+      margin-left: -8px;
+    }
+  }
+}
+
+md-dialog {
+  min-width: 550px;
+
+  md-toolbar.md-default-theme {
+    box-shadow: none;
+    border-bottom: 1px solid $gray-light;
+  }
+}

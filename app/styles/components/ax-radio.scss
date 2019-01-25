@@ -1,0 +1,18 @@
+md-radio-button {
+.md-container {
+    transition: box-shadow .3s ease-out;
+    border-radius: 50%;
+  }
+
+  &.md-focused {
+    outline: none;
+
+    .md-container {
+      box-shadow: 0 0 0 6px rgba(0,0,0,.12);
+    }
+  }
+
+  &:focus {
+    outline: none;
+  }
+}

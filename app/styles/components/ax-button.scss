@@ -1,0 +1,39 @@
+$md-icon-size: 28px;
+
+.md-button.md-icon-button {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: $md-icon-size;
+    min-height: $md-icon-size;
+    height: $md-icon-size;
+    overflow: visible;
+
+    background: transparent;
+
+    color: inherit;
+    font: inherit;
+    text-align: center;
+
+    line-height: normal;
+
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: inherit;
+
+    -webkit-appearance: none;
+
+    outline: none;
+
+    &::-moz-focus-inner {
+        border: none;
+        padding: 0;
+    }
+}
+
+.md-button.md-primary {
+    transition: box-shadow .3s ease-out;
+
+    &.md-focused {
+        box-shadow: 0 0 0 4px rgba(0,0,0,.12);
+    }
+}

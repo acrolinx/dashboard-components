@@ -1,0 +1,79 @@
+.md-table {
+  width: 100%;
+  font-size: 14px;
+
+  border-collapse: collapse;
+  border-spacing: 0;
+
+  .md-head {
+    text-align: left;
+    color: #767676;
+
+    .md-column {
+      &--sortable {
+        cursor: pointer;
+      }
+
+      &--active {
+        color: black;
+      }
+
+      &--narrow {
+        width: 40px;
+      }
+
+      &--medium {
+        width: 80px;
+      }
+
+      &--centered {
+        text-align: center;
+      }
+
+      div .paper-icon {
+        text-indent: -3px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .md-checkbox {
+    margin: 0;
+  }
+
+  .md-row {
+    height: 49px;
+    border-bottom: 1px solid $gray-light;
+  }
+
+  tbody {
+    .md-row {
+      &:hover {
+        background-color: $blue-light;
+      }
+    }
+  }
+
+  .md-cell {
+    &--centered {
+      text-align: center;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+
+  md-menu {
+    md-icon {
+      transition: color 0.2s;
+    }
+
+    &:hover {
+      md-icon {
+        color: black;
+      }
+    }
+  }
+}

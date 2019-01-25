@@ -1,0 +1,42 @@
+.ax-check {
+    background-color: $brand-primary;
+    border-radius: 2px;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:before {
+        content: '';
+        width: 10px;
+        height: 2px;
+        background-color: #fff;
+    }
+}
+
+.ax-checkbox {
+    border-radius: 50%;
+    position: relative;
+
+    .md-table & {
+        margin-top: 2px;
+    }
+
+    &:before {
+        transition: transform .3s ease-out;
+        width: 36px;
+        height: 36px;
+        background-color: RGBA(var(--background-500), 0.2);
+        content: '';
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0);
+    }
+
+    &:focus:before {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}

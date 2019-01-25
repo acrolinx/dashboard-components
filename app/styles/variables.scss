@@ -1,0 +1,37 @@
+$m-base: 20px;
+$m-xs: $m-base / 4;
+$m-sm: $m-base / 2;
+$m-lg: $m-base * 2;
+$m-xl: $m-base * 3;
+
+$brand-primary: #3e96db;
+
+$black: #000;
+
+$gray-light: #f1f6f8;
+$gray-dark: #767676;
+
+$blue-light: #e1f5fe;
+
+$primary: (
+  '50': #e8f2fb,
+  '100': #c5e0f4,
+  '200': #9fcbed,
+  '300': #78b6e6,
+  '400': #5ba6e0,
+  '500': $brand-primary,
+  '600': #388ed7,
+  '700': #3083d2,
+  '800': #2879cd,
+  '900': #1b68c4,
+  'A100': #f9fcff,
+  'A200': #c6deff,
+  'A400': #93c1ff,
+  'A700': #7ab2ff,
+  'contrastDefaultColor': #00b4a5,
+  'contrastLightColors': ('500', '600', '700', '800', '900'),
+  'contrastStrongLightColors': ('500', '600', '700')
+);
+
+$accent: 'blue';
+$warn: 'red';

@@ -1,0 +1,20 @@
+.ax-avatar {
+  width: 32px;
+
+  &--placeholder {
+    fill: #3E96DB;
+  }
+}
+
+.ax-logo {
+  width: 150px;
+  height: 26px;
+
+  &__path-1 {
+    fill: #282829;
+  }
+
+  &__path-2 {
+    fill: #3E96DB;
+  }
+}
