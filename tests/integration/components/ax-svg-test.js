@@ -6,21 +6,27 @@ import hbs from 'htmlbars-inline-precompile';
 module('Integration | Component | ax-svg', function(hooks) {
   setupRenderingTest(hooks);
 
-  test('it renders', async function(assert) {
-    // Set any properties with this.set('myProperty', 'value');
-    // Handle any actions with this.set('myAction', function(val) { ... });
+  test('it yields avatar component', async function(assert) {
+    assert.expect(1);
 
-    await render(hbs`{{ax-svg}}`);
-
-    assert.equal(this.element.textContent.trim(), '');
-
-    // Template block usage:
     await render(hbs`
-      {{#ax-svg}}
-        template block text
+      {{#ax-svg as |svg|}}
+        {{svg.avatar}}
       {{/ax-svg}}
     `);
 
-    assert.equal(this.element.textContent.trim(), 'template block text');
+    assert.dom('svg').exists();
+  });
+
+  test('it yields logo component', async function(assert) {
+    assert.expect(1);
+
+    await render(hbs`
+      {{#ax-svg as |svg|}}
+        {{svg.logo}}
+      {{/ax-svg}}
+    `);
+
+    assert.dom('svg').exists();
   });
 });
