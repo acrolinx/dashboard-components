@@ -1,3 +1,1 @@
-import Select from 'ember-paper/components/paper-select';
-
-export default Select;
+export { default } from 'ember-paper/components/paper-select';

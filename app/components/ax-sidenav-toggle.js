@@ -1,3 +1,1 @@
-import SidenavToggle from 'ember-paper/components/paper-sidenav-toggle';
-
-export default SidenavToggle;
+export { default } from 'ember-paper/components/paper-sidenav-toggle';

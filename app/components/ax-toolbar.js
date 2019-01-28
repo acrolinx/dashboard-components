@@ -1,3 +1,1 @@
-import Toolbar from 'ember-paper/components/paper-toolbar';
-
-export default Toolbar;
+export { default } from 'ember-paper/components/paper-toolbar';

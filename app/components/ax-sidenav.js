@@ -1,3 +1,1 @@
-import Sidenav from 'ember-paper/components/paper-sidenav';
-
-export default Sidenav;
+export { default } from 'ember-paper/components/paper-sidenav';

@@ -1,3 +1,1 @@
-import SidenavInner from 'ember-paper/components/paper-sidenav-inner';
-
-export default SidenavInner;
+export { default } from 'ember-paper/components/paper-sidenav-inner';

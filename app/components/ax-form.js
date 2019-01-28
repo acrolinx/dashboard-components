@@ -1,3 +1,1 @@
-import Form from 'ember-paper/components/paper-form';
-
-export default Form;
+export { default } from 'ember-paper/components/paper-form';

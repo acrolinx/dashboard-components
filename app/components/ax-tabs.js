@@ -1,3 +1,1 @@
-import Tabs from 'ember-paper/components/paper-tabs';
-
-export default Tabs;
+export { default } from 'ember-paper/components/paper-tabs';

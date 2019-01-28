@@ -1,3 +1,1 @@
-import ToolbarTools from 'ember-paper/components/paper-toolbar-tools';
-
-export default ToolbarTools;
+export { default } from 'ember-paper/components/paper-toolbar-tools';

@@ -1,3 +1,1 @@
-import Tooltip from 'ember-paper/components/paper-tooltip';
-
-export default Tooltip;
+export { default } from 'ember-paper/components/paper-tooltip';

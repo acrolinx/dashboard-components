@@ -1,3 +1,1 @@
-import AxPagination from '@acrolinx/dashboard-components/components/ax-pagination';
-
-export default AxPagination;
+export { default } from '@acrolinx/dashboard-components/components/ax-pagination';

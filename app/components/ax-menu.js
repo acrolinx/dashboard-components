@@ -1,3 +1,1 @@
-import Menu from 'ember-paper/components/paper-menu';
-
-export default Menu;
+export { default } from 'ember-paper/components/paper-menu';
