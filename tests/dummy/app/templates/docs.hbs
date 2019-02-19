@@ -2,8 +2,10 @@
 
 {{#docs-viewer as |viewer|}}
   {{#viewer.nav as |nav|}}
-    {{nav.item "Introduction" "docs.index"}}
-    {{nav.item "Usage" "docs.usage"}}
+    {{nav.item "Introduction" "docs.introduction"}}
+    {{nav.section "Components"}}
+      {{nav.item "ax-checkbox" "docs.components.ax-checkbox"}}
+
   {{/viewer.nav}}
 
   {{#viewer.main}}
