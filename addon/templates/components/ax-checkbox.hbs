@@ -4,7 +4,10 @@
     role="button"
     onclick={{action "onChange"}}
     onkeypress={{action "onKeyPress"}}
-    class="md-checkbox md-default-theme ax-checkbox">
+    class="md-checkbox md-default-theme ax-checkbox"
+    aria-label={{@ariaLabel}}
+    aria-labelledby={{@labelId}}
+    >
     <div class="md-container">
       {{yield}}
     </div>
@@ -13,5 +16,8 @@
   {{paper-checkbox
     value=@value
     onChange=(action "onChange")
+    label=@label
+    ariaLabel=@ariaLabel
+    labelId=@labelId
   }}
 {{/if}}
