@@ -8,7 +8,7 @@ const Router = AddonDocsRouter.extend({
 
 Router.map(function() {
   docsRoute(this, function() {
-    this.route('introduction');
+    this.route('introduction', { path: "/" });
     this.route('components', function() {
       this.route('ax-checkbox');
     });
