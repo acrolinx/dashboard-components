@@ -11,6 +11,7 @@ Router.map(function() {
     this.route('introduction', { path: "/" });
     this.route('components', function() {
       this.route('ax-checkbox');
+      this.route('ax-icon');
     });
  });
 
