@@ -22,7 +22,8 @@
   },
   "dependencies": {
     "ember-cli-babel": "^6.16.0",
-    "ember-cli-htmlbars": "^3.0.1"
+    "ember-cli-htmlbars": "^3.0.1",
+    "ember-paper": "^1.0.0-beta.21"
   },
   "devDependencies": {
     "@ember/optional-features": "^0.6.3",
@@ -41,7 +42,6 @@
     "ember-export-application-global": "^2.0.0",
     "ember-load-initializers": "^1.1.0",
     "ember-maybe-import-regenerator": "^0.1.6",
-    "ember-paper": "^1.0.0-beta.21",
     "ember-qunit": "^3.4.1",
     "ember-resolver": "^5.0.1",
     "ember-source": "~3.5.1",
