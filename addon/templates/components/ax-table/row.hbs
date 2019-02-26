@@ -1,4 +1,8 @@
-<tr class="md-row">
+<tr
+  class="md-row"
+  {{action "mouseEnter" on="mouseEnter"}}
+  {{action "mouseLeave" on="mouseLeave"}}
+>
   {{yield (hash
     cell=(component "ax-table/cell"))
   }}
