@@ -7,7 +7,7 @@
   {{/demo.example}}
   {{demo.snippet "docs-demo-ax-checkbox-inline.hbs"}}
 {{/docs-demo}}
-If for whatever reason it is not possible to define the label within checkbox,
+If for whatever reason it is not possible to define label within checkbox,
 it can be placed after. In this case, make sure to set ariaLabel (corresponds to aria-label) or labelId (corresponds to aria-labelledby) on the checkbox so that it remains accessible.
 {{#docs-demo as |demo|}}
   {{#demo.example name="docs-demo-ax-checkbox.hbs"}}
@@ -28,7 +28,9 @@ it can be placed after. In this case, make sure to set ariaLabel (corresponds to
 <h2 class="docs-md__h2">Indeterminate checkbox</h2>
 {{#docs-demo as |demo|}}
   {{#demo.example name="docs-demo-ax-checkbox-indeterminate.hbs"}}
-    {{#ax-checkbox value=true }}Indeterminate checkbox {{/ax-checkbox}}
+    {{#ax-checkbox value=true }}Indeterminate checkbox
+    <div class="ax-check"></div>
+    {{/ax-checkbox}}
   {{/demo.example}}
   {{demo.snippet "docs-demo-ax-checkbox-indeterminate.hbs"}}
 {{/docs-demo}}

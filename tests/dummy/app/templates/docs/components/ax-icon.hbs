@@ -1,17 +1,40 @@
 <h1>Icons</h1>
-<table>
-  <thead>
-    <tr>
-      <th>Attribute</th>
-      <th>Values</th>
-      <th>Explanation</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>classNames</td>
-      <td>string</td>
-      <td>Pass space separated names of classes</td>
-    </tr>
-  </tbody>
-</table>
+  <h2 class="docs-md__h2">Usage</h2>
+
+  {{#docs-demo as |demo|}}
+    {{#demo.example name="docs-demo-ax-icon.hbs"}}
+      {{#ax-icon name="add_circle" size=24}}{{/ax-icon}}
+      {{#ax-icon name="add_circle" size=36}}{{/ax-icon}}
+    {{/demo.example}}
+    {{demo.snippet "docs-demo-ax-icon.hbs"}}
+  {{/docs-demo}}
+
+  <h2 class="docs-md__h2">Possible attributes</h2>
+{{#paper-list}}
+    <h3 class="md-list-item-header">
+      ariaHidden
+    </h3>
+    <p class="attribute-description">Set aria-hidden on icon element to hide the icon from screen reader</p>
+  {{paper-divider}}
+    <h3 class="md-list-item-header">
+      ariaLabel
+    </h3>
+    <p  class="attribute-description">Set aria-label on element</p>
+  {{paper-divider}}
+  <h3 class="md-list-item-header">
+    classNames
+  </h3>
+  <p  class="attribute-description">Pass class names for the icon</p>
+  {{paper-divider}}
+  <h3 class="md-list-item-header">
+    name
+  </h3>
+  <p  class="attribute-description">Pass icon name from this list: <a href="https://material.io/tools/icons/?style=baseline">available md-icons</a></p>
+  {{paper-divider}}
+    <h3 class="md-list-item-header">
+      size
+    </h3>
+    <p  class="attribute-description">Set size for the icon</p>
+  {{paper-divider}}
+
+{{/paper-list}}
