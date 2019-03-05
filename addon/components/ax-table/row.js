@@ -3,5 +3,19 @@ import layout from '../../templates/components/ax-table/row';
 
 export default Component.extend({
   layout,
-  tagName: ''
+  tagName: '',
+
+  actions: {
+    mouseEnter() {
+      if (this.onMouseEnter) {
+        this.onMouseEnter();
+      }
+    },
+
+    mouseLeave() {
+      if (this.onMouseLeave) {
+        this.onMouseLeave()
+      }
+    }
+  }
 });
