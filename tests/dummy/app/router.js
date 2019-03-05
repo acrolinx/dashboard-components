@@ -12,6 +12,10 @@ Router.map(function() {
     this.route('components', function() {
       this.route('ax-checkbox');
       this.route('ax-icon');
+      this.route('ax-pagination');
+      this.route('ax-svg');
+      this.route('ax-table');
+      this.route('ax-title');
     });
  });
 
