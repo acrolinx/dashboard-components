@@ -23,6 +23,7 @@
   "dependencies": {
     "ember-cli-babel": "^6.16.0",
     "ember-cli-htmlbars": "^3.0.1",
+    "ember-intl": "^3.5.2",
     "ember-paper": "^1.0.0-beta.21"
   },
   "devDependencies": {

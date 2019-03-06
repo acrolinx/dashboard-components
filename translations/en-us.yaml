@@ -1,0 +1,9 @@
+shared:
+  components:
+    pagination:
+      title: 'Pagination Navigation'
+      currentPage: 'Current Page, Page {page}'
+      switchPageButton: 'Goto, Page {page}'
+  baseComponents:
+    pagination:
+      pageCount: 'of {pagesCount}'
