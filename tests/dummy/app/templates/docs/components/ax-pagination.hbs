@@ -3,11 +3,11 @@
 Pagination can be used like this:
 {{#docs-demo as |demo|}}
   {{#demo.example name="docs-demo-ax-pagination.hbs"}}
-  {{ax-pagination
+    {{ax-pagination
     currentPage=pageNum
     pagesCount=10
     onChange=(action (mut pageNum))
-  }}
+    }}
   {{/demo.example}}
   {{demo.snippet "docs-demo-ax-pagination.hbs"}}
 {{/docs-demo}}
