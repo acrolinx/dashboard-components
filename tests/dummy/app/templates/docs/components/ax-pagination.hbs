@@ -1,0 +1,15 @@
+<h1>Pagination</h1>
+<h2 class="docs-md__h2">Usage</h2>
+Pagination can be used like this:
+{{#docs-demo as |demo|}}
+  {{#demo.example name="docs-demo-ax-pagination.hbs"}}
+    {{ax-pagination
+    currentPage=pageNum
+    pagesCount=10
+    onChange=(action (mut pageNum))
+    }}
+  {{/demo.example}}
+  {{demo.snippet "docs-demo-ax-pagination.hbs"}}
+{{/docs-demo}}
+<code>currentPage</code>, <code>pagesCount</code> and <code>onChange</code> attributes can also be bound to query parameters.
+<a href="https://github.com/offirgolan/ember-parachute">emper-parachute</a> can be used to simplify dealing with query parameters in Ember.
