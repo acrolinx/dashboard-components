@@ -1,1 +1,73 @@
 <h1>Table</h1>
+<h2 class="docs-md__h2">Usage</h2>
+An ax-table consists of a head and a body.
+Each head, on its turn, may contain columns or sortable columns.
+A body consists of rows, each row has several cells.
+{{#docs-demo as |demo|}}
+  {{#demo.example name="docs-demo-ax-table.hbs"}}
+    {{#ax-table as |table|}}
+      {{#table.head as |head|}}
+        {{#head.column}}
+          Header 1
+        {{/head.column}}
+        {{#head.column classNames="md-primary"}}
+          Header 2
+        {{/head.column}}
+        {{#head.sortableColumn}}
+          Header 3
+        {{/head.sortableColumn}}
+      {{/table.head}}
+      {{#table.body as |body|}}
+        {{#body.row as |row|}}
+          {{#row.cell}}
+            Data 1
+          {{/row.cell}}
+          {{#row.cell}}
+            Data 2
+          {{/row.cell}}
+          {{#row.cell}}
+            Data 3
+          {{/row.cell}}
+        {{/body.row}}
+        {{#body.row as |row|}}
+          {{#row.cell}}
+            Other data
+          {{/row.cell}}
+          {{#row.cell}}
+            Other data
+          {{/row.cell}}
+          {{#row.cell}}
+            Other data
+          {{/row.cell}}
+        {{/body.row}}
+      {{/table.body}}
+    {{/ax-table}}
+  {{/demo.example}}
+  {{demo.snippet "docs-demo-ax-table.hbs"}}
+{{/docs-demo}}
+
+<h2 class="docs-md__h2">Attributes</h2>
+
+{{#paper-list}}
+  {{#paper-subheader}}Table{{/paper-subheader}}
+  <h3 class="md-list-item-header">
+    updateSort
+  </h3>
+  <p class="attribute-description">Set updateSort action for the table</p>
+  {{paper-divider}}
+  <h3 class="md-list-item-header">
+    updateDirection
+  </h3>
+  <p class="attribute-description"></p>
+  {{paper-divider}}
+  <h3 class="md-list-item-header">
+    sort
+  </h3>
+  <p class="attribute-description"></p>
+  {{paper-divider}}
+  <h3 class="md-list-item-header">
+    direction
+  </h3>
+  <p class="attribute-description">Set sort direction for the table</p>
+  {{paper-divider}}
+{{/paper-list}}
