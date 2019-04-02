@@ -11,5 +11,12 @@ Pagination can be used like this:
   {{/demo.example}}
   {{demo.snippet "docs-demo-ax-pagination.hbs"}}
 {{/docs-demo}}
-<code>currentPage</code>, <code>pagesCount</code>, and <code>onChange</code> attributes can also be bound to query parameters.
+<code>currentPage</code> and <code>pagesCount</code> attributes can also be bound to query parameters.
 <a href="https://github.com/offirgolan/ember-parachute">emper-parachute</a> can be used to simplify dealing with query parameters in Ember.
+<h2 class="docs-md__h2">Attributes</h2>
+{{#paper-list}}
+  {{#paper-subheader classNames="md-list-item-header"}}currentPage{{/paper-subheader}}
+  <p class="attribute-description">Pass in variable which is bound to page number in the controller</p>
+  {{#paper-subheader classNames="md-list-item-header"}}pagesCount{{/paper-subheader}}
+  <p class="attribute-description">Pass in pages count</p>
+{{/paper-list}}

@@ -10,6 +10,15 @@ body {
   box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.10);
 }
 
-.md-list-item-header {
+md-list .md-list-item-header {
   color: $brand-primary;
+  font-size: 18px;
+}
+:root {
+ --brand-primary: $brand-primary;
+}
+
+.attribute-description {
+  padding-left: 16px;
+  padding-bottom: 30px;
 }

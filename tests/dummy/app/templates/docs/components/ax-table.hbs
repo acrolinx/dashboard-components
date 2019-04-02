@@ -5,7 +5,7 @@ Each head, on its turn, may contain columns or sortable columns.
 A body consists of rows, each row has several cells.
 {{#docs-demo as |demo|}}
   {{#demo.example name="docs-demo-ax-table.hbs"}}
-    {{#ax-table as |table|}}
+    {{#ax-table sort="myCategory" direction="desc" as |table|}}
       {{#table.head as |head|}}
         {{#head.column}}
           Header 1
@@ -13,7 +13,7 @@ A body consists of rows, each row has several cells.
         {{#head.column classNames="md-primary"}}
           Header 2
         {{/head.column}}
-        {{#head.sortableColumn}}
+        {{#head.sortableColumn sortBy="myCategory"}}
           Header 3
         {{/head.sortableColumn}}
       {{/table.head}}
@@ -49,50 +49,30 @@ A body consists of rows, each row has several cells.
 <h2 class="docs-md__h2">Attributes</h2>
 
 {{#paper-list}}
-  {{#paper-subheader}}Table{{/paper-subheader}}
   <h3 class="md-list-item-header">
-    updateSort
+    Table
   </h3>
-  <p class="attribute-description">Set updateSort action for the table</p>
+  {{#paper-subheader classNames="md-list-item-header"}}<div>sort</div>{{/paper-subheader}}
+  <p class="attribute-description">Set sort category of the table. Can also be passed in via query parameters.</p>
   {{paper-divider}}
-  <h3 class="md-list-item-header">
-    updateDirection
-  </h3>
-  <p class="attribute-description"></p>
+  {{#paper-subheader classNames="md-list-item-header"}}<div>direction</div>{{/paper-subheader}}
+  <p class="attribute-description">Set sort direction for the table. Can also be passed in via query parameters.</p>
   {{paper-divider}}
-  <h3 class="md-list-item-header">
-    sort
-  </h3>
-  <p class="attribute-description"></p>
-  {{paper-divider}}
-  <h3 class="md-list-item-header">
-    direction
-  </h3>
-  <p class="attribute-description">Set sort direction for the table</p>
-  {{paper-divider}}
-  <h3 class="md-list-item-header">
-    classNames
-  </h3>
+  {{#paper-subheader classNames="md-list-item-header"}}<div>classNames</div>{{/paper-subheader}}
   <p class="attribute-description">Pass classes which should be applied on the table</p>
   {{paper-divider}}
-  {{#paper-subheader}}Column{{/paper-subheader}}
-  <h3 class="md-list-item-header">
-    classNames
-  </h3>
+    <h3 class="md-list-item-header">Column</h3>
+  {{#paper-subheader classNames="md-list-item-header"}}classNames{{/paper-subheader}}
   <p class="attribute-description">Pass classes which should be applied to the column</p>
-  {{#paper-subheader}}sortableColumn{{/paper-subheader}}
-  <h3 class="md-list-item-header">
-    classNames
-  </h3>
+  <h3 class="md-list-item-header">sortableColumn</h3>
+  {{#paper-subheader classNames="md-list-item-header"}}classNames{{/paper-subheader}}
   <p class="attribute-description">Pass classes which should be applied to the column</p>
-  {{#paper-subheader}}Cell{{/paper-subheader}}
-  <h3 class="md-list-item-header">
-    classNames
-  </h3>
+  {{#paper-subheader classNames="md-list-item-header"}}sortBy{{/paper-subheader}}
+  <p class="attribute-description">Pass sorting category name which is referred to in <code>sort</code> property of the table element</p>
+  <h3 class="md-list-item-header">Cell</h3>
+  {{#paper-subheader classNames="md-list-item-header"}}classNames{{/paper-subheader}}
   <p class="attribute-description">Pass classes which should be applied to the cell</p>
-  {{#paper-subheader}}Row{{/paper-subheader}}
-  <h3 class="md-list-item-header">
-    classNames
-  </h3>
+  <h3 class="md-list-item-header">Row</h3>
+  {{#paper-subheader classNames="md-list-item-header"}}classNames{{/paper-subheader}}
   <p class="attribute-description">Pass classes which should be applied to the row</p>
 {{/paper-list}}
