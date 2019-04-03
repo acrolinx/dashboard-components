@@ -1,4 +1,6 @@
 <h1>Checkbox example</h1>
+<h2 class="docs-md__h2">Accessibility features</h2>
+Accessible behavior added: value of the focused radio button changes when hitting Enter or Space key.
   <h2 class="docs-md__h2">Inline usage</h2>
   A simple checkbox can be created like this:
 {{#docs-demo as |demo|}}
@@ -7,7 +9,7 @@
   {{/demo.example}}
   {{demo.snippet "docs-demo-ax-checkbox-inline.hbs"}}
 {{/docs-demo}}
-If for whatever reason it is not possible to define label within checkbox,
+If for whatever reason it's not possible to set a label within checkbox,
 it can be placed after. In this case, make sure to set ariaLabel (corresponds to aria-label) or labelId (corresponds to aria-labelledby) on the checkbox so that it remains accessible.
 {{#docs-demo as |demo|}}
   {{#demo.example name="docs-demo-ax-checkbox.hbs"}}

@@ -1,4 +1,5 @@
-<h1>Icons</h1>
+<h1>Icon</h1>
+Material Design icon
   <h2 class="docs-md__h2">Usage</h2>
 
   {{#docs-demo as |demo|}}
@@ -9,32 +10,33 @@
     {{demo.snippet "docs-demo-ax-icon.hbs"}}
   {{/docs-demo}}
 
-  <h2 class="docs-md__h2">Possible attributes</h2>
+  <h2 class="docs-md__h2">Attributes</h2>
 {{#paper-list}}
-  <h3 class="md-list-item-header">
+  {{#paper-subheader classNames="md-list-item-header"}}
     ariaHidden
-  </h3>
+  {{/paper-subheader}}
   <p class="attribute-description">Set aria-hidden on icon element to hide the icon from screen reader</p>
-  {{paper-divider}}
-  <h3 class="md-list-item-header">
+
+
+  {{#paper-subheader classNames="md-list-item-header"}}
     ariaLabel
-  </h3>
+  {{/paper-subheader}}
   <p  class="attribute-description">Set aria-label on element</p>
-  {{paper-divider}}
-  <h3 class="md-list-item-header">
+
+  {{#paper-subheader classNames="md-list-item-header"}}
     classNames
-  </h3>
+  {{/paper-subheader}}
   <p  class="attribute-description">Pass class names for the icon</p>
-  {{paper-divider}}
-  <h3 class="md-list-item-header">
+
+  {{#paper-subheader classNames="md-list-item-header"}}
     name
-  </h3>
+  {{/paper-subheader}}
   <p  class="attribute-description">Pass icon name from this list: <a href="https://material.io/tools/icons/?style=baseline">available md-icons</a></p>
-  {{paper-divider}}
-  <h3 class="md-list-item-header">
+
+  {{#paper-subheader classNames="md-list-item-header"}}
     size
-  </h3>
+  {{/paper-subheader}}
   <p  class="attribute-description">Set size for the icon</p>
-  {{paper-divider}}
+  
 
 {{/paper-list}}

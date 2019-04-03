@@ -16,6 +16,8 @@ Router.map(function() {
       this.route('ax-svg');
       this.route('ax-table');
       this.route('ax-title');
+      this.route('ax-radio');
+      this.route('ax-dialog');
     });
  });
 
