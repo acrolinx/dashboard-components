@@ -7,6 +7,10 @@ export default Component.extend({
   tagName: '',
 
   active: computed('tableAPI.sort', 'sortBy', function() {
-    return this.get('tableAPI.sort') === this.sortBy;
+    let currentSortCategory = this.get('tableAPI.sort').startsWith('-') ? this.get('tableAPI.sort').slice(1) : this.get('tableAPI.sort');
+    return currentSortCategory === this.sortBy;
+  }),
+  sortDirection: computed('tableAPI.sort', function () {
+    return this.get('tableAPI.sort').startsWith("-") ? 'desc' : 'asc'
   })
 });

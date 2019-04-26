@@ -7,19 +7,12 @@ export default Component.extend({
 
   actions: {
     updateSort(value) {
-      if (this.sort === value) {
-        const newDirection = this.direction === 'asc' ? 'desc' : 'asc';
-
-        this.updateDirection(newDirection);
-        this.set('direction', newDirection);
-      } else {
-        this.updateSort(value);
-        this.updateDirection('asc');
+      let currentSortCategory = this.get('sort').startsWith('-') ? this.get('sort').slice(1) : this.get('sort');
+      let newSort = value;
+      if (currentSortCategory === value && !this.get('sort').startsWith('-')) {
+        newSort = '-' + currentSortCategory;
       }
-    },
-
-    updateDirection(value) {
-      this.set('direction', value);
+      this.updateSort(newSort);
     }
   }
 });
