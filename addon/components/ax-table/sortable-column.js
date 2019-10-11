@@ -6,7 +6,13 @@ export default Component.extend({
   layout,
   tagName: '',
 
+  isDirectionAsc: computed( 'tableAPI.sort' , function() {
+    return ! this.get('tableAPI.sort').startsWith('-');
+  }),
+
   active: computed('tableAPI.sort', 'sortBy', function() {
-    return this.get('tableAPI.sort') === this.sortBy;
+    let column = this.get('tableAPI.sort');
+    column = column.startsWith('-') ? column.slice(1) : column;
+    return column === this.sortBy;
   })
 });

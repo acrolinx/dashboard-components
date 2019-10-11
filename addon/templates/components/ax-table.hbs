@@ -3,9 +3,7 @@
 <table class="md-table {{@classNames}}">
   {{#let
     (hash
-      direction=@direction
       sort=@sort
-      updateDirection=(action "updateDirection")
       updateSort=(action "updateSort")
     )
     as |tableAPI|

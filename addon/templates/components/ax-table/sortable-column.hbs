@@ -6,7 +6,7 @@
   {{yield}}
 
   {{#if active}}
-    {{#if (eq @tableAPI.direction "asc")}}
+    {{#if isDirectionAsc }}
       {{ax-icon name=@ascIconName size=@iconSize}}
     {{else}}
       {{ax-icon name=@descIconName size=@iconSize}}
