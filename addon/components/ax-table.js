@@ -7,19 +7,14 @@ export default Component.extend({
 
   actions: {
     updateSort(value) {
-      if (this.sort === value) {
-        const newDirection = this.direction === 'asc' ? 'desc' : 'asc';
-
-        this.updateDirection(newDirection);
-        this.set('direction', newDirection);
-      } else {
-        this.updateSort(value);
-        this.updateDirection('asc');
-      }
+      let currentSortingColumn = this.sort.startsWith('-') ? this.sort.slice(1): this.sort;
+      if ( currentSortingColumn === value ) {
+        if( !this.sort.startsWith('-') ) {
+         value = '-' + value;
+        }
+      } 
+      this.set('sort', value);
     },
 
-    updateDirection(value) {
-      this.set('direction', value);
-    }
   }
 });
